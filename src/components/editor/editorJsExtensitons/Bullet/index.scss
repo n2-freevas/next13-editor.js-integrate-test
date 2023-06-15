@@ -1,0 +1,54 @@
+$list-box-padding: 32px;
+$list-item-padding: 10px;
+
+
+.cdx-frame {
+    margin: 0;
+    padding: $list-box-padding;
+    outline: none;
+    list-style-position: outside;
+    background: white;
+    border: solid 1px rgb(237,237,237);
+    border-radius: 8px;
+    // .cdx-settings-button{
+    //     width:50%;
+    input {
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        &::placeholder{
+            color:lightgrey;
+        }
+        // padding:$list-item-padding 0;
+    }
+}
+.cdx-list{
+    outline: none;
+}
+
+// .cdx-list-settings {
+//     display: flex;
+// }
+
+.cdx-list__item {
+    margin-left: calc($list-box-padding - 5px);
+    padding: $list-item-padding 0 $list-item-padding 10px;
+    line-height: 1.6em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Bulletの変更 */
+.cdx-list--neutral{
+    list-style-type:disc;
+}
+
+.cdx-list--merit{
+    list-style-image: url(./checkMeritIcon.svg);
+}
+
+.cdx-list--demerit{
+    list-style-image: url(./checkDemeritIcon.svg);
+}
+

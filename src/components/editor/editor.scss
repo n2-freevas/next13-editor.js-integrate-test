@@ -1,0 +1,31 @@
+/* Editor大枠のスタイル変更 */
+.ce-block__content, .ce-toolbar__content {
+    max-width:calc(100% - 10px) !important;
+}
+.cdx-block {
+    max-width: 100% !important;
+}
+
+
+/* エディタに登場するH2、H3ヘッダーの改変 */
+.ce-block{
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+        padding:64px 0 10px 0;
+        margin-bottom:40px;
+        border-bottom: solid 1px rgb(237,237,237);
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 600;
+        margin:64px 0 16px 10px;
+    }
+    b{
+        // ハイライト表示
+        background: linear-gradient(white, white 55%, #F5ECC5 60%, #F5ECC5)
+    }
+}
+
+
+
