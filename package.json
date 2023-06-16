@@ -6,7 +6,9 @@
     "dev": "next dev",
     "dev:admin": "APP_MODE=ADMIN next dev -p 3002",
     "build": "next build",
+    "build:admin": "APP_MODE=ADMIN next build",
     "start": "next start",
+    "start:admin": "APP_MODE=ADMIN next start",
     "lint": "next lint"
   },
   "dependencies": {
