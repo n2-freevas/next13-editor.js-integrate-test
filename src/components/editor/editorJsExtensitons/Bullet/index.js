@@ -3,7 +3,7 @@
  */
 import './index.scss';
 
-import { IconListBulleted, IconListNumbered } from '@codexteam/icons'
+import { IconListBulleted} from '@codexteam/icons'
 
 /**
  * @typedef {object} ListData
@@ -50,7 +50,7 @@ export default class List {
   static get toolbox() {
     return {
       icon: IconListBulleted,
-      title: 'List',
+      title: 'Bullet',
     };
   }
 

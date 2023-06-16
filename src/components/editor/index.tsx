@@ -1,13 +1,11 @@
 "use client";
 
-import './editor.scss'
+import './index.scss'
 import { useEffect, useRef, useState } from "react";
 
 import EditorJS, { API, OutputData } from "@editorjs/editorjs";
 import useId from "@mui/utils/useId";
 import { EditorTools } from "./tools";
-//@ts-ignore
-import Undo from 'editorjs-undo'
 
 type ArticleEditorProps = {
   defaultValue: OutputData;

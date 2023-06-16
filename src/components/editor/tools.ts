@@ -1,12 +1,12 @@
 // import CheckList from "@editorjs/checklist";
 // import Delimiter from "@editorjs/delimiter";
-// import Embed from "@editorjs/embed";
+//@ts-ignore
+import Embed from "./editorJsExtensitons/EmbedEx/index"
 import Header from "@editorjs/header";
 // import Bullet from  './editorJsExtensitons/bullet'
-//@ts-ignore
 // import ImageTool from "@editorjs/image";
-//@ts-ignore
 // import List from '@editorjs/list'
+//@ts-ignore
 import ListEx from './editorJsExtensitons/Bullet/index';
 // import Marker from "@editorjs/marker";
 // import Quote from "@editorjs/quote";
@@ -31,15 +31,16 @@ export const EditorTools = {
     class: ListEx,
     inlineToolbar: true,
   },
-//   embed: {
-//     class: Embed,
-//     config: {
-//       services: {
-//         youtube: true,
-//         twitter: true,
-//       },
-//     },
-//   },
+  embed: {
+    class: Embed,
+    config: {
+      services: {
+        youtube: true,
+        twitter: true,
+        instagram: true
+      },
+    },
+  },
 //   quote: {
 //     class: Quote,
 //     inlineToolbar: true,
