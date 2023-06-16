@@ -1,6 +1,7 @@
 "use client";
 import './page.scss'
 import dynamic from "next/dynamic";
+import Image from 'next/image'
 import {OutputData} from '@editorjs/editorjs'
 
 const ArticleEditor = dynamic(
@@ -30,9 +31,9 @@ export default function Editor() {
             </div>
             <h1><input placeholder='記事タイトルを入力'></input></h1>
             <div className="icon-box">
-                <img src="/icon/Twitter_black.svg"></img>
-                <img src="/icon/LINE_black.svg"></img>
-                <img src="/icon/Facebook_black.svg"></img>
+                <Image src="/icon/Twitter_black.svg" alt ="T"/>
+                <Image src="/icon/LINE_black.svg" alt="L"/>
+                <Image src="/icon/Facebook_black.svg" alt="F"/>
             </div>
             <ArticleEditor
                 defaultValue={data}
